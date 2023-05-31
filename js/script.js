@@ -1,3 +1,6 @@
+// DICHIARAZIONE VARIABILI
+let ourTeamDom= document.querySelector(".ourTeam");
+
 // CREAZIONE ARRAY
 let ourTeam = [
     {
@@ -38,4 +41,10 @@ for( let i=0; i<ourTeam.length; i++){
     console.log(member.name)
     console.log(member.role)
     console.log(member.image)
+    let memberInfo= `<div class="d-flex justify-content-around">
+                    <p>${member.name}</p>
+                    <p>${member.role}</p>
+                    <p>${member.image}</p>
+                    </div>`
+    ourTeamDom.innerHTML+= memberInfo;
 }
