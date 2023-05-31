@@ -31,4 +31,11 @@ let ourTeam = [
         "image": "barbara-ramos-graphic-designer.jpg"
     }
 ]
-console.log(ourTeam)
+
+// CICLO PER LA VISUALIZZAZIONE DELLE INFORMAZIONI DELL'ARRAY
+for( let i=0; i<ourTeam.length; i++){
+    let member= ourTeam[i];
+    console.log(member.name)
+    console.log(member.role)
+    console.log(member.image)
+}
